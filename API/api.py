@@ -22,6 +22,12 @@ def GetSingleProducts(id):
     request = requests.get(f"{URL_API}/products/" + str(id))
     
     return json.loads(request.text)
+
+def GetAllProductsCategory(category):   
+    
+    request = requests.get(f"{URL_API}/products")
+    
+    return json.loads(request.text)
  
     
 
